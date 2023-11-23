@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script type="text/javascript" src="app.js"></script>
+       <title>Calculatrice</title>
+</head>
+
+<body style="background-color: black;">
+    <div class="calculatrice">
+        <input type="text" name="ecran" id="ecran"/>
+            
+        <table class="tab_box">
+            <tr>
+                <td><input type="button" value="C" onClick="tout()" class="btn btn-danger"></td>
+                <td><input type="button" value="%" onclick="ecran('%')" class="btn btn-secondary"></td>
+                <td><input type="button" value="/"onclick="ecran('/')" class="btn btn-secondary"></td>
+                <td><input type="button" value="Del" onclick="efface()" class="btn btn-secondary"></td>
+            </tr><br>
+            <tr>
+                <td><input type="button" value="7" onclick="ecran(7)"></td>
+                <td><input type="button" value="8" onclick="ecran(8)"></td>
+                <td><input type="button" value="9" onclick="ecran(9)"></td>
+                <td><input type="button" value="*" class="btn btn-secondary" onclick="ecran('*')"></td>
+            </tr><br>
+
+            <tr>
+                <td><input type="button" value="4" onclick="ecran(4)"></td>
+                <td><input type="button" value="5" onclick="ecran(5)"></td>
+                <td><input type="button" value="6" onclick="ecran(6)"></td>
+                <td><input type="button" value="-" onclick="ecran('-')" class="btn btn-secondary"></td>
+
+            </tr><br>
+            <tr>
+                <td><input type="button" value="1" onclick="ecran(1)"></td>
+                <td><input type="button" value="2"onclick="ecran(2)"></td>
+                <td><input type="button" value="3"onclick="ecran(3)"></td>
+                <td><input type="button" value="+" onclick="ecran('+')" class="btn btn-secondary"></td>
+                
+            </tr><br>
+            <tr>
+                <td><input type="button" value="0" onclick="ecran(0)"></td>
+                <td><input type="button" value="00" onclick="ecran('0'+0)"></td>
+                <td><input type="button" value="." onclick="ecran(',')"></td>
+                <td><input type="button" value="=" onclick="calculer()" class="btn btn-secondary"></td>
+                
+            </tr>
+        </table>
+
+    </div>
+    
+</body>
+
+</html>
